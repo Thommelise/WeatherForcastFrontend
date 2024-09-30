@@ -1,0 +1,11 @@
+<!-- src/app/forecast/forecast.component.html -->
+
+<div class="forecast-container" *ngIf="hourly">
+    <h2>7-Day Forecast</h2>
+    <div class="forecast-grid">
+      <div class="forecast-card" *ngFor="let day of getSevenDayForecast()">
+        <p><strong>Date:</strong> {{ day.date }}</p>
+
+    </div>
+  </div>
+  
